@@ -2,7 +2,7 @@ void main() {
   const maxRareStock = 3;
   const rareYear = 1980;
   const maxPriceThreshold = 5000.0;
-  const avaregePriceThreshold = 2500.0;
+  const avaragePriceThreshold = 2500.0;
   const minPriceThreshold = 1000.0;
   double discount;
   final price = 3240.0;
@@ -12,7 +12,7 @@ void main() {
 
   if (price < minPriceThreshold) {
     print('бюджетна ціна');
-  } else if (price < avaregePriceThreshold) {
+  } else if (price < avaragePriceThreshold) {
     print('середня ціна');
   } else if (price < maxPriceThreshold) {
     print('премуім ціна');
