@@ -47,14 +47,15 @@ void printAlbumReport({
   required int timeSeconds,
 }) {
   print(
-    'Опис альбому: ${albumDescription(
-      artistName: artistName, 
-      albumTitle: albumTitle, 
-      yearReleased: yearReleased)}',
+    'Опис альбому: ${albumDescription(artistName: artistName, albumTitle: albumTitle, yearReleased: yearReleased)}',
   );
   print('ТривалістьЖ: ${toMinutes(timeSeconds)} хвилин');
-  print('Ціна зі знижкою: ${applyDiscount(price, getDiscountFor(condition)).toStringAsFixed(2)}');
-  print('Чи є альбом рідкісним: ${isRareAlbum(yearReleased: yearReleased, condition: condition, stock: stock)}');
+  print(
+    'Ціна зі знижкою: ${applyDiscount(price, getDiscountFor(condition)).toStringAsFixed(2)}',
+  );
+  print(
+    'Чи є альбом рідкісним: ${isRareAlbum(yearReleased: yearReleased, condition: condition, stock: stock)}',
+  );
 }
 
 void main() {
